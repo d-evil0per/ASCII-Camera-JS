@@ -1,0 +1,50 @@
+<html>
+<title>ASCII CAM </title>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+</head>
+<body>
+
+<center><h3 style="margin-top: 20px">ASCII Camera </h3></center>
+
+<hr>
+<h1 id="info">Please allow this page to access your camera.</h1>
+
+	<div id="notSupported">
+		<h1>Your browser does not support the Camera API.</h1>
+		
+	</div>
+
+<div class="row">
+	<div class="col-lg-6 p-2">
+	<center>
+	<button id="pause" class="btn btn-primary">Play</button>
+	</center>
+	<pre id="ascii"></pre>
+	
+	</div>
+	<div class="col-lg-6 p-2">
+		<center><h3>Snapshot Preview</h3>
+		<button id="changecolor" class="btn btn-secondary" onclick="changecolor()">Change Color</button>
+		<button id="download" class="btn btn-success" onclick="downloadpng()">Download</button>
+		</center>
+		<pre id="snap"></pre>
+		 
+   
+		
+	</div>
+
+</div>
+	
+	
+</body>
+
+<script type="text/javascript" src="camera.js"></script>
+	<script type="text/javascript" src="ascii.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+
+</html>
