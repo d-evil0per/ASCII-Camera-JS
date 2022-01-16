@@ -27,7 +27,7 @@ var camera = (function() {
 				if (video.mozSrcObject !== undefined) { // hack for Firefox < 19
 					video.mozSrcObject = stream;
 				} else {
-					video.src = (window.URL && window.URL.createObjectURL(stream)) || stream;
+					video.srcObject = stream;
 				}
 
 				initCanvas();

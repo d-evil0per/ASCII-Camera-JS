@@ -58,10 +58,9 @@ function changecolor(){
 
 	var safeColors = ['00','33','66','99','cc','ff'];
 	// var safeColors=['00','11','22','33','44','55','66','77','88','99','aa','bb','cc','dd','ee','ff'];
-for(i=1;i<=15;i++)
-{
-	$("#snap span.sh_"+i).css('color',randomColor());
-}
+var rand = function() {
+    return Math.floor(Math.random()*6);
+};
 var randomColor = function() {
     var r = safeColors[rand()];
     var g = safeColors[rand()];
@@ -69,9 +68,12 @@ var randomColor = function() {
     return "#"+r+g+b;
 };
 
-var rand = function() {
-    return Math.floor(Math.random()*6);
-};
+for(i=1;i<=15;i++)
+{
+	$("#snap span.sh_"+i).css('color',randomColor());
+}
+
+
 
 
 
